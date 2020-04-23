@@ -34,3 +34,16 @@ input[type=text] {
     margin: 8px 0;
     font-size: 1em;
 }
+
+.listingContainer {
+    font-family: sans-serif;
+    color: darkslategray;
+}
+
+.restaurantListing {
+    padding: 10% 3% 10% 3%;
+    width: 60%;
+    margin-left: 17%;
+    margin-top: 2%;
+    box-shadow: 2px 4px 13px lightgrey;
+}
