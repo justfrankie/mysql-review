@@ -15,13 +15,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// these native express methods do the same as above:
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
 
 // outputs HTTP requests to console
 app.use(morgan('dev'));
 
 app.use('/', router);
 
+app.use('/', express.static(path.join(__dirname, '../client/dist')))
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));

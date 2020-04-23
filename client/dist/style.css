@@ -1,0 +1,36 @@
+body {
+    color: rgb(47, 47, 47);
+    background-color: transparent;
+    text-align: center;
+    margin: 0;
+}
+
+#mainContainer{
+    display:block;
+}
+
+#mainInput{
+    top: -400px;
+    position: relative;
+}
+
+#mainImage{
+    width:100%;
+    object-fit: cover;
+    height:70vh;
+}
+
+#mainButton{
+top: 244px;
+left: 71.9%;
+position: absolute;
+padding: 10px;
+font-family: sans-serif;
+font-size: 1em;
+}
+input[type=text] {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-size: 1em;
+}

@@ -1,7 +1,7 @@
 {
   "name": "mysql-review",
   "version": "1.0.0",
-  "description": "MySQL Review",
+  "description": "Full-stack Review with Mongoose",
   "main": "index.js",
   "scripts": {
     "build": "webpack -d -w",
@@ -23,12 +23,11 @@
     "cors": "^2.8.5",
     "express": "^4.15.0",
     "morgan": "^1.9.1",
-    "mysql": "^2.17.1",
-    "mysql2": "^1.7.0",
     "nodemon": "^1.19.2",
     "path": "^0.12.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "sequelize": "^5.19.0"
+    "mongoose": "5.9.10",
+    "axios": "0.19.2"
   }
 }
