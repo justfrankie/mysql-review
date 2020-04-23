@@ -6,10 +6,18 @@ let RestaurantList = (props) => {
      <div className="listingContainer">
      {props.list.map((data, key) => (
          <div key={key} className="restaurantListing">
-         <li>{`${data.name}`}</li>
-         <li>{`${data.rating}/5`}</li>
-         <li>{`${data.location}`}</li>
-         <li>{`${data.type}`}</li>
+
+            <div className="listingImageContainer">
+                <img src={`${data.img}`} className="restaurantImage"></img>
+            </div>
+
+            <div className="listingTextContainer">
+                <li id="listingTitle">{`${data.name}`}</li>
+                <li>{`Rating: ${data.rating}/5`}</li>
+                <li>{`City: ${data.location}`}</li>
+                <li>{`Business Type: ${data.type}`}</li>
+            </div>
+
          </div>
      ))}
      </div>

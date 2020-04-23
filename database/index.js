@@ -8,6 +8,7 @@ db.once('open', function() {
 });
 
 var dataSchema = new mongoose.Schema({
+    img: String,
     name: String,
     rating: Number,
     location: String,
@@ -17,7 +18,7 @@ var dataSchema = new mongoose.Schema({
 var dataModel = mongoose.model('defaultModel', dataSchema);
 
 // dataModel.create(
-//     {name: "El Pollo Loco", rating: 3.8, location:"Pomona", type:"Restaurant"}
+//     {img: "https://content.fortune.com/wp-content/uploads/2015/05/rtx1ctwz.jpg", name: "El Pollo Loco", rating: 3.8, location:"Pomona", type:"Restaurant"}
 //     )
 
 
@@ -28,11 +29,11 @@ let model = {
     getOne: (_id) => (
         dataModel.findById({_id})
     ),
-    createOne: (name, rating, location, type) => (
-        dataModel.create({name: name, rating: rating, location: location, type: type})
+    createOne: (name, img, rating, location, type) => (
+        dataModel.create({name: name, img: img, rating: rating, location: location, type: type})
     ),
-    update: (_id, name, rating, location, type) => (
-        dataModel.findByIdAndUpdate({_id: _id}, {name: name, rating: rating, location: location, type: type})
+    update: (_id, name, img, rating, location, type) => (
+        dataModel.findByIdAndUpdate({_id: _id}, {name: name, img: img, rating: rating, location: location, type: type})
     ),
     delete: (_id) => (
         dataModel.findByIdAndDelete({_id})

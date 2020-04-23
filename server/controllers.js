@@ -12,8 +12,8 @@ module.exports = {
     })
   },
   post: (req, res) => {
-    let {name, rating, location, type} = req.body
-      db.createOne(name, rating, location, type)
+    let {name, rating, img, location, type} = req.body
+      db.createOne(name, img, rating, location, type)
       .then(data => {
         res.status(200).send(data)
       })
@@ -33,8 +33,8 @@ module.exports = {
   },
   update: (req, res) => {
     let id = req.params.id
-    let {name, rating, location, type} = req.body
-    db.update(id, name, rating, location, type)
+    let {name, img, rating, location, type} = req.body
+    db.update(id, name, img, rating, location, type)
     .then(data => {
       res.status(200).send(data)
     })

@@ -21,7 +21,7 @@ body {
 }
 
 #mainButton{
-top: 244px;
+top: 25%;
 left: 71.9%;
 position: absolute;
 padding: 10px;
@@ -38,12 +38,36 @@ input[type=text] {
 .listingContainer {
     font-family: sans-serif;
     color: darkslategray;
+    padding-bottom: 5%;
 }
 
 .restaurantListing {
-    padding: 10% 3% 10% 3%;
+    padding: 1%;
     width: 60%;
-    margin-left: 17%;
     margin-top: 2%;
     box-shadow: 2px 4px 13px lightgrey;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.restaurantImage {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.listingImageContainer {
+    width: 40%;
+    height: 79%
+}
+
+.listingTextContainer {
+    color: #5f5d5d;
+    font-size: 1.3em;
+    font-family: Verdana;
+    text-align: left;
+    margin: 1% 0 0 5%;
+}
+#listingTitle {
+    color:#a92510;
+    font-size:1.5em;
 }
